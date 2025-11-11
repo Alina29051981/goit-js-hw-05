@@ -1,6 +1,9 @@
-const getUserNames = function (users) {
-  users.map((user) => users.name);
-};
+function getUserNames(users) {
+  const names = [];
+  for (const user of users) {
+    names.push({ name: user.name });
+  }
+}
 
 console.log(
   getUserNames([
@@ -40,4 +43,4 @@ console.log(
       balance: 2764,
     },
   ])
-); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+);
