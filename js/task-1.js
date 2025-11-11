@@ -1,9 +1,6 @@
-function getUserNames(users) {
-  const names = [];
-  for (const user of users) {
-    names.push({ name: user.name });
-  }
-}
+const getUserNames = (users) => {
+  return users.map((user) => user.name);
+};
 
 console.log(
   getUserNames([
